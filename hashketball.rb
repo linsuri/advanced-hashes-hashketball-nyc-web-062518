@@ -222,7 +222,7 @@ def player_by_number(number)
     data[:players].each do |name, attribute_hash|
       if number == attribute_hash[:number]
         return name
-      end  
+      end
     end
   end
   output 
