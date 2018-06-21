@@ -218,15 +218,13 @@ def big_shoe_rebounds
 end  
 
 def player_by_number(number)
-  output = ""
   game_hash.each do |location, data|
     data[:players].each do |name, attribute_hash|
       if number == attribute_hash[:number]
-        output = name
+        return name
       end  
     end
   end
-  output
 end  
 
 binding.pry
