@@ -225,6 +225,7 @@ def player_by_number(number)
       end  
     end
   end
+  return output 
 end  
 
 binding.pry
